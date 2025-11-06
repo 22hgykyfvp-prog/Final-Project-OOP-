@@ -1,0 +1,4225 @@
+/* hero full screen */
+/* === Quran Journal – Dark-Blue Pro Theme === */
+/* === FINAL OVERRIDE: Dark-Blue Header === */
+/* === FINAL OVERRIDE: Dark-Blue Header === */
+header.top {
+  background: rgba(11, 18, 32, 0.9) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(175, 209, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav a.active {
+  background: radial-gradient(circle at top, rgba(59, 130, 246, 0.7) 0%, rgba(17, 24, 39, 0.1) 80%) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+}
+
+header.top {
+  background: rgba(11, 18, 32, 0.9) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(175, 209, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.hero-video {
+  filter: none !important;
+}
+
+.hero-overlay {
+  background: none !important;
+}
+
+.nav a.active {
+  background: radial-gradient(circle at top, rgba(59, 130, 246, 0.7) 0%, rgba(17, 24, 39, 0.1) 80%) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+}
+
+:root {
+  --bg: #0a1220;          /* deep navy background */
+  --panel: #111a2e;       /* main panels */
+  --card: #15213b;        /* cards & ayah background */
+  --text: #e8ecff;        /* readable white-blue text */
+  --muted: #94a3c1;       /* secondary text */
+  --accent: #3b82f6;      /* bright blue accent */
+  --border: #1f2b4a;      /* subtle border */
+  --danger: #ef4444;      /* red for delete */
+}
+
+/* global body + base */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* header */
+header.top {
+  background: linear-gradient(180deg, #0f172a 0%, #0a1220 90%);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+.brand {
+  color: #fff;
+}
+.nav a {
+  color: var(--muted);
+}
+.nav a.active {
+  background: radial-gradient(circle at top, var(--accent) 0%, #1e293b 80%);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(59,130,246,0.4);
+}
+
+/* search bar */
+.search {
+  background: #101b33;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.search:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+}
+
+/* ayah cards */
+.ayah {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.ayah-ar {
+  font-size: 1.8rem !important;
+  color: #e0e8ff;
+}
+.ayah-tr {
+  font-size: 1rem !important;
+  color: #bcd3ff;
+}
+
+/* table + journal */
+.table-journal th,
+.table-journal td {
+  background: var(--panel);
+  border-color: var(--border);
+}
+.journal-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+.journal-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+.journal-btn:hover {
+  filter: brightness(1.1);
+}
+
+/* buttons */
+.btn,
+.play-btn,
+.stop-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 600;
+}
+.btn {
+  background: var(--accent);
+  color: #fff;
+}
+.play-btn {
+  background: #2563eb;
+  color: #fff;
+}
+.stop-btn {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* modal */
+.modal .content,
+.modal-content {
+  background: #0f172a;
+  border: 1px solid var(--border);
+}
+
+/* scrollbars */
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+:root {
+  /* 👉 adjust THIS to make video taller/shorter on your laptop */
+  --hero-h: calc(100vh - 110px); /* 110px = your banner + navbar */
+}/* === Quran ayah styling (bigger Arabic + nice spacing) === */
+.ayah-ar {
+  font-size: 1.5rem !important;     /* try 2.1rem or 2.3rem if you want huge */
+  line-height: 1.8;
+  text-align: right;
+  direction: rtl;
+  font-weight: 500;
+}
+.ayah-tr {
+  font-size: 1rem !important;
+  line-height: 1.5;
+}
+
+/* make surah translation bigger */
+.ayah-tr {
+  font-size: 0.95rem;   /* try 1rem or 1.05rem if you want bigger */
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* header stuff (your green bar) */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #0b1220;
+  color: #fff;
+}
+.top-banner {
+  background: #002020;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+}
+.top-banner a {
+  color: #8bf5d4;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f3b37;
+  padding: 14px 36px;
+}
+.nav-links a {
+  color: #fff;
+  margin-left: 18px;
+  text-decoration: none;
+}
+.nav-links a.active {
+  color: #34d399;
+  border-bottom: 2px solid #34d399;
+}
+
+/* 🕌 hero */
+.hero-landing.hero-full {
+  position: relative;
+  height: var(--hero-h);
+  min-height: 520px;
+  overflow: visible;            /* 👈 IMPORTANT: let circle keluar */
+}
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(0,0,0,.4) 0%, rgba(7,10,16,.9) 90%);
+}
+.hero-body {
+  position: absolute;
+  top: 90%;                     /* 👉 move text UP/DOWN here */
+  left: 11%;
+  z-index: 5;
+  max-width: 520px;
+}
+.hero-pill {
+  background: rgba(15,118,110,.4);
+  border: 1px solid rgba(94,234,212,.25);
+  padding: 4px 14px;
+  border-radius: 999px;
+  width: fit-content;
+}
+.hero-title {
+  font-size: 2.6rem;
+  margin-top: 16px;
+}
+.hero-subtitle {
+  max-width: 460px;
+  color: rgba(236,252,243,.7);
+  margin-top: 10px;
+}
+.hero-actions {
+  margin-top: 14px;
+}
+.hero-btn.primary {
+  background: #0f766e;
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 20px 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* search bar below video */
+.hero-tools {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+.search {
+  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(255,255,255,.05);
+  border-radius: 999px;
+  padding: 7px 14px;
+  color: #fff;
+  min-width: 320px;
+}
+
+/* ✨ the circle */
+.hero-reminder {
+  position: absolute;
+  right: 3%;
+  bottom: 240px;                /* 👉 move bubble UP/DOWN here */
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top, rgba(17,94,89,.9) 0%, rgba(2,10,15,.8) 70%);
+  border: 1px solid rgba(224,231,255,.04);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  box-shadow: 0 18px 48px rgba(0,0,0,.35);
+  z-index: 6;
+}
+.reminder-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fb7185 0%, rgba(251,113,133,0) 70%);
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  filter: drop-shadow(0 0 12px rgba(251,113,133,.5));
+}
+.reminder-badge {
+  background: rgba(9,100,92,.35);
+  border: 1px solid rgba(186,231,220,.25);
+  border-radius: 999px;
+  padding: 3px 12px 4px;
+  font-size: 0.68rem;
+}
+.reminder-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.reminder-desc {
+  font-size: .72rem;
+  color: rgba(236,252,243,.7);
+  max-width: 220px;
+}
+.reminder-actions {
+  display: flex;
+  gap: 8px;
+}
+.reminder-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 5px 14px 6px;
+  font-size: .67rem;
+  cursor: pointer;
+}
+.reminder-btn.primary {
+  background: #ecfdf5;
+  color: #065f46;
+}
+.reminder-btn.ghost {
+  background: rgba(255,255,255,.08);
+  color: #fff;
+}
+
+/* hide grid at start */
+.hidden-grid {
+  display: none;
+}
+
+.hero-landing.hero-full {
+  position: relative;
+  height: calc(100vh - 96px); /* adjust height here if needed */
+  min-height: 520px;
+  overflow: hidden;
+}
+
+/* push hero text down/up */
+.hero-landing.hero-full .hero-body {
+  top: 26%;           /* 🔼 bigger = go lower, smaller = go higher */
+  transform: none;
+}
+
+/* bubble base style (shape + glow) */
+.daily-float-card {
+  background: radial-gradient(circle at 50% 20%, rgba(248, 113, 113, 0.3), rgba(6, 95, 91, 0.9));
+  border: 1px solid rgba(236, 252, 203, 0.08);
+  border-radius: 9999px;   /* 👈 makes it circle/oval */
+  backdrop-filter: blur(18px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 28px 24px 32px;
+  color: #fff;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+}
+
+.daily-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, #f472b6 0%, rgba(244, 114, 182, 0) 70%);
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  filter: drop-shadow(0 0 12px rgba(244, 114, 182, 0.65));
+}
+
+section.hero-landing.hero-full #dailyBubble.daily-float-card {
+  position: absolute !important;
+  right: 3% !important;     /* 👉 move left/right */
+  bottom: 900px !important;  /* 🔼 make bigger to go UP, smaller to go DOWN */
+  width: 360px !important;
+  height: 360px !important;
+  z-index: 50 !important;
+}
+
+/* 1. control video height */
+.hero-landing.hero-full {
+  /* adjust this to make video taller/shorter */
+  height: calc(100vh - 95px);  /* try 100, 110, 130 etc */
+}
+
+/* 2. move the text (Read • Reflect • Record) up/down */
+.hero-landing.hero-full .hero-body {
+  position: absolute;
+  top: 250px;       /* 🔼 make smaller to go UP, bigger to go DOWN */
+  left: 11%;
+  max-width: 800px;
+}
+
+/* 3. move the circle reminder (your bubble) */
+#dailyBubble {
+  position: absolute;
+  right: 3%;        /* 👉 move left/right */
+  bottom:900000px;     /* 🔼 make bigger to go UP, make 0 to stick at bottom */
+  width: 340px;
+  height: 340px;
+  z-index: 900;
+}
+
+:root {
+  /* adjust this to control video size */
+  --hero-h: 100vh; /* try 95vh or 90vh if it looks too tall */
+}
+
+/* hero section */
+.hero-landing.hero-full {
+  height: var(--hero-h);
+  position: relative;
+  overflow: visible;
+}
+
+.hero-landing.hero-full .hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-landing.hero-full .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(0,0,0,.45) 0%, rgba(11,18,32,.9) 90%);
+}
+
+/* move hero text a bit higher */
+.hero-body {
+  justify-content: flex-start !important;
+  padding-top: 1rem; /* adjust 3.5rem–5rem based on your laptop */
+}
+
+/* ============= Reminder Circle ============= */
+.hero-reminder {
+  position: absolute;
+  right: 4%;
+  bottom: 900rem;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top, rgba(17,94,89,.85) 0%, rgba(3,7,18,.92) 75%);
+  border: 1px solid rgba(226,232,255,.08);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 45px rgba(0,0,0,.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  color: #fff;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* glowing heart icon */
+.reminder-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 999px;
+  background: radial-gradient(circle, #fb7185 0%, rgba(251,113,133,0) 75%);
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  filter: drop-shadow(0 0 16px rgba(251,113,133,.5));
+  animation: pulse 2.8s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 16px rgba(251,113,133,.35); }
+  50% { box-shadow: 0 0 26px rgba(251,113,133,.55); }
+}
+
+.reminder-badge {
+  background: rgba(15,118,110,.3);
+  border: 1px solid rgba(190,242,237,.25);
+  border-radius: 999px;
+  padding: 4px 14px 5px;
+  font-size: 0.62rem;
+  letter-spacing: .03em;
+}
+
+.reminder-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.reminder-desc {
+  font-size: 0.75rem;
+  color: rgba(236,252,243,0.75);
+  max-width: 220px;
+}
+
+/* buttons inside reminder */
+.reminder-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.reminder-btn {
+  border-radius: 999px;
+  padding: 5px 14px 6px;
+  font-size: 0.68rem;
+  cursor: pointer;
+  border: none;
+}
+
+.reminder-btn.primary {
+  background: #0f766e;
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(15,118,110,.45);
+}
+
+.reminder-btn.ghost {
+  background: rgba(248,250,252,.08);
+  color: #fff;
+}
+
+/* responsive */
+@media (max-width: 980px) {
+  .hero-reminder {
+    right: 50%;
+    transform: translateX(50%);
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.hero-landing {
+  overflow: visible;        /* was hidden → this was cutting your circle */
+}
+
+/* ✅ circle reminder */
+.hero-reminder {
+  position: absolute;
+  right: 3.5rem;            /* move to the side — adjust this */
+  bottom: -6rem;            /* push it down a bit — adjust this too */
+  width: 330px;
+  height: 330px;
+  border-radius: 9999px;    /* this makes it a circle */
+  background: radial-gradient(circle at top,
+      rgba(17, 94, 89, 0.85) 0%,
+      rgba(3, 7, 18, 0.92) 65%);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+  border: 1px solid rgba(226, 232, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  /* center all content */
+  text-align: center;
+  gap: 10px;
+}
+
+/* glowing heart in circle */
+.hero-reminder .reminder-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 999px;
+  background: radial-gradient(circle, #fb7185 0%, rgba(251,113,133,0) 70%);
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  filter: drop-shadow(0 0 14px rgba(251,113,133,.6));
+}
+
+/* badge */
+.hero-reminder .reminder-badge {
+  background: rgba(15, 118, 110, 0.35);
+  border: 1px solid rgba(190, 242, 237, 0.16);
+  border-radius: 999px;
+  padding: 4px 14px 5px;
+  font-size: 0.62rem;
+  letter-spacing: .03em;
+}
+
+/* title + desc */
+.hero-reminder .reminder-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.hero-reminder .reminder-desc {
+  font-size: 0.72rem;
+  color: rgba(236, 252, 243, 0.7);
+  max-width: 220px;
+}
+
+/* buttons */
+.hero-reminder .reminder-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+.hero-reminder .reminder-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 5px 14px 6px;
+  font-size: 0.68rem;
+  cursor: pointer;
+}
+.hero-reminder .primary {
+  background: #0f766e;
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(15, 118, 110, .45);
+}
+.hero-reminder .ghost {
+  background: rgba(248, 250, 252, .08);
+  color: #fff;
+}
+
+:root {
+  /* change this to 100vh, 95vh, 90vh, etc */
+  --hero-h: 100vh;
+}
+
+.hero-landing.hero-full {
+  height: var(--hero-h) !important;
+  min-height: 50vh;
+  position: relative;
+  overflow: hidden;
+  border-bottom: none;
+}
+
+.hero-landing.hero-full .hero-video {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.hero-landing.hero-full .hero-overlay {
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(0,0,0,.45) 0%, rgba(11,18,32,.9) 90%);
+}
+
+/* circle bubble on the RIGHT */
+.daily-float-card {
+  position: absolute;
+  top: 52%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(19,78,74,.85) 0%, rgba(1,16,15,.2) 70%);
+  border: 1px solid rgba(209, 250, 229, 0.14);
+  box-shadow: 0 18px 45px rgba(0,0,0,.45);
+  backdrop-filter: blur(16px);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 40;
+}
+
+.daily-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
+  background: radial-gradient(circle, #fbcfe8 0%, rgba(248, 113, 113, 0) 80%);
+  display: grid;
+  place-items: center;
+  font-size: 1.9rem;
+  color: #022c22;
+  box-shadow: 0 12px 28px rgba(236,72,153,.3);
+}
+
+.daily-label {
+  font-size: 0.7rem;
+  background: rgba(3, 105, 161, 0.05);
+  border: 1px solid rgba(236, 253, 245, 0.12);
+  padding: 4px 14px;
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+}
+
+.daily-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.daily-note {
+  font-size: 0.78rem;
+  color: rgba(236, 253, 245, 0.7);
+  max-width: 240px;
+}
+
+.daily-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.daily-primary,
+.daily-secondary {
+  border-radius: 999px;
+  padding: 5px 14px 6px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.daily-primary {
+  background: #e2fff4;
+  color: #064e3b;
+  border: none;
+}
+
+.daily-secondary {
+  background: rgba(0,0,0,0.28);
+  border: 1px solid rgba(236, 253, 245, 0.05);
+  color: #fff;
+}
+
+/* optional cute pulse */
+.daily-icon {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 18px rgba(236, 72, 153, 0.35); }
+  50% { box-shadow: 0 0 36px rgba(236, 72, 153, 0.55); }
+}
+
+/* responsive: center bubble on small screen */
+@media (max-width: 980px) {
+  .daily-float-card {
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 300px;
+    height: 300px;
+  }
+}
+
+:root {
+  /* 🖥️ Adjust this value to change video size on your laptop */
+  /* Try between 100vh (full screen) and 80vh (a bit shorter) */
+  --hero-video-height: 100vh;
+}
+
+/* Make hero fill screen dynamically */
+.hero-full {
+  position: relative;
+  height: var(--hero-video-height);
+  border-bottom: none;
+}
+
+.hero-full .hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+/* Keep your hero text centered */
+.hero-body {
+  position: relative;
+  z-index: 3;
+}
+
+/* === Circle reminder bubble === */
+.daily-float-card {
+  position: absolute;
+  right: 5%;
+  bottom: 22%;
+  background: radial-gradient(circle at center, rgba(16, 95, 78, 0.9) 0%, rgba(2, 22, 19, 0.65) 80%);
+  border: 1px solid rgba(207, 250, 232, 0.18);
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(14px);
+  text-align: center;
+  padding: 25px;
+  z-index: 30;
+  animation: dailyFloat 0.4s ease-out;
+}
+
+@keyframes dailyFloat {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.daily-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fbcfe8 0%, rgba(248, 113, 113, 0) 80%);
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  color: #022c22;
+  box-shadow: 0 12px 28px rgba(248, 113, 113, 0.3);
+  margin-bottom: 10px;
+}
+
+.daily-label {
+  font-size: 0.72rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(240, 253, 250, 0.08);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+  color: rgba(236, 253, 245, 0.9);
+}
+
+.daily-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 3px 0 5px;
+  color: #fff;
+}
+
+.daily-note {
+  font-size: 0.8rem;
+  color: rgba(236, 253, 245, 0.75);
+  margin-bottom: 10px;
+  max-width: 250px;
+}
+
+.daily-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.daily-primary {
+  background: #ecfdf5;
+  color: #064e3b;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.72rem;
+  border: none;
+  box-shadow: 0 12px 25px rgba(236, 253, 245, 0.3);
+  cursor: pointer;
+}
+.daily-primary:hover {
+  background: #d1fae5;
+}
+
+.daily-secondary {
+  background: rgba(4, 47, 46, 0.4);
+  color: rgba(236, 253, 245, 0.8);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.72rem;
+  border: 1px solid rgba(240, 253, 250, 0.05);
+  cursor: pointer;
+}
+.daily-secondary:hover {
+  background: rgba(4, 47, 46, 0.6);
+}
+
+/* mobile version (center it) */
+@media (max-width: 768px) {
+  .daily-float-card {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 14%;
+    width: 280px;
+    height: 280px;
+  }
+}
+
+:root {
+  /* your banner + nav is ~110px high */
+  --qj-header-h: 110px;
+}
+
+/* 1️⃣ hero full page */
+.hero-full {
+  position: relative;
+  height: calc(100vh - var(--qj-header-h));
+  min-height: 560px; /* just in case small screen */
+  border-bottom: none;
+}
+
+.hero-full .hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.78);
+}
+
+/* 2️⃣ search stays bottom center */
+.hero-tools-overlay {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  background: rgba(2, 6, 10, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 6px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  z-index: 35;
+}
+
+/* 3️⃣ DAILY CARD – bigger + move to the side (kanan sikit) */
+.daily-float-card {
+  position: absolute;
+  /* move to the right a bit so it doesn't cover text */
+  right: 4.5%;
+  bottom: 20%;
+  background: radial-gradient(circle at top, rgba(11, 108, 98, 0.9) 0%, rgba(3, 18, 22, 0.35) 80%);
+  border: 1px solid rgba(207, 250, 232, 0.15);
+  border-radius: 30px;
+  padding: 18px 26px 18px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4);
+  min-width: 540px;          /* 🔼 bigger */
+  max-width: 640px;
+  backdrop-filter: blur(14px);
+  z-index: 40;
+  animation: dailyPop 0.35s ease-out;
+}
+
+@keyframes dailyPop {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* bigger icon */
+.daily-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  background: radial-gradient(circle, #fbcfe8 0%, rgba(248, 113, 113, 0) 80%);
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  color: #022c22;
+  box-shadow: 0 14px 30px rgba(248, 113, 113, 0.35);
+  flex: 0 0 64px;
+}
+
+.daily-label {
+  display: inline-flex;
+  gap: 6px;
+  background: rgba(2, 6, 10, 0.3);
+  border: 1px solid rgba(209, 250, 229, 0.04);
+  padding: 4px 10px 5px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  color: rgba(236, 253, 245, 0.95);
+}
+
+.daily-title {
+  font-size: 1.15rem;   /* 🔼 a bit bigger */
+  margin: 5px 0 4px;
+  font-weight: 650;
+}
+
+.daily-note {
+  font-size: 0.8rem;
+  color: rgba(236, 253, 245, 0.65);
+  max-width: 420px;
+}
+
+.daily-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.daily-primary {
+  background: #e2fff4;
+  color: #064e3b;
+  border-radius: 999px;
+  padding: 6px 16px 7px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 12px 28px rgba(226, 255, 244, 0.45);
+}
+
+.daily-secondary {
+  background: rgba(4, 47, 46, 0.4);
+  color: rgba(236, 253, 245, 0.8);
+  border-radius: 999px;
+  padding: 6px 14px 7px;
+  font-size: 0.7rem;
+  border: 1px solid rgba(236, 253, 245, 0.05);
+}
+
+/* 4️⃣ mobile – center again if screen kecil */
+@media (max-width: 820px) {
+  .daily-float-card {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 18%;
+    min-width: 90%;
+    max-width: 94%;
+  }
+  .hero-tools-overlay {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}
+
+.hero-full {
+  position: relative;
+  /* header (banner + nav) ≈ 108px, so minus that */
+  height: calc(100vh - 108px);
+  min-height: 520px;
+  border-bottom: none;
+}
+
+.hero-full .hero-body {
+  /* center vertically a bit more */
+  justify-content: center;
+  padding-top: 0;
+}
+
+/* keep video behind */
+.hero-landing.hero-full .hero-video {
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+/* move search to float over video */
+.hero-tools-overlay {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  background: rgba(3, 7, 12, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 6px 14px 6px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(10px);
+}
+
+/* ===== DAILY FLOAT CARD (the pop-up) ===== */
+.daily-float-card {
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(circle at top, rgba(11, 108, 98, 0.88) 0%, rgba(3, 18, 22, 0.7) 75%);
+  border: 1px solid rgba(183, 255, 222, 0.15);
+  border-radius: 26px;
+  padding: 16px 22px 16px 18px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  min-width: 480px;
+  max-width: 700px;
+  backdrop-filter: blur(14px);
+  z-index: 30;
+  animation: dailyPop 0.35s ease-out;
+}
+
+@keyframes dailyPop {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 16px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.daily-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  background: radial-gradient(circle, #fbcfe8 0%, rgba(248, 113, 113, 0) 80%);
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  color: #022c22;
+  flex: 0 0 58px;
+  box-shadow: 0 12px 25px rgba(248, 113, 113, 0.25);
+}
+
+.daily-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.daily-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: rgba(229, 246, 240, 0.85);
+  margin-bottom: 4px;
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.18);
+  padding: 3px 10px 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(209, 250, 229, 0.04);
+}
+
+.daily-title {
+  margin: 4px 0 2px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.daily-note {
+  margin: 0;
+  font-size: 0.78rem;
+  color: rgba(240, 253, 250, 0.6);
+  max-width: 420px;
+}
+
+.daily-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.daily-primary {
+  background: #ecfdf5;
+  color: #064e3b;
+  border-radius: 999px;
+  padding: 5px 16px 6px;
+  font-size: 0.72rem;
+  border: 0;
+  box-shadow: 0 12px 28px rgba(236, 253, 245, 0.35);
+}
+.daily-primary:hover {
+  filter: brightness(1.03);
+}
+
+.daily-secondary {
+  background: rgba(4, 47, 46, 0.25);
+  color: rgba(240, 253, 250, 0.6);
+  border-radius: 999px;
+  padding: 5px 14px 6px;
+  font-size: 0.72rem;
+  border: 1px solid rgba(240, 253, 250, 0.04);
+}
+.daily-secondary:hover {
+  background: rgba(4, 47, 46, 0.45);
+}
+
+/* mobile */
+@media (max-width: 720px) {
+  .hero-full {
+    height: calc(100vh - 106px);
+  }
+  .daily-float-card {
+    bottom: 17%;
+    min-width: 90%;
+    max-width: 92%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .hero-tools-overlay {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
+
+.daily-surah-card {
+  background: radial-gradient(circle at top, rgba(52, 211, 153, 0.12) 0%, rgba(2, 44, 34, 0.55) 75%);
+  border: 1px solid rgba(163, 230, 207, 0.42);
+  border-radius: 18px;
+  margin: 18px auto 24px;
+  max-width: 1050px;
+  padding: 16px 20px 18px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+.daily-left {
+  flex: 1;
+}
+
+.daily-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgba(2, 44, 34, 0.5);
+  width: fit-content;
+  padding: 3px 12px 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(163, 230, 207, 0.25);
+  color: #d1fae5;
+  margin-bottom: 6px;
+}
+
+.daily-surah-card h3 {
+  margin: 0 0 4px;
+  font-size: 1.25rem;
+  font-weight: 650;
+}
+
+.daily-note {
+  margin: 0 0 10px;
+  color: rgba(240, 253, 250, 0.75);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  max-width: 540px;
+}
+
+.daily-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-daily-primary {
+  background: linear-gradient(135deg, #10b981 0%, #047857 95%);
+  color: #ecfdf5;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 16px 7px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35);
+  transition: 0.12s ease;
+}
+.btn-daily-primary:hover {
+  filter: brightness(1.04);
+  transform: translateY(-1px);
+}
+
+.btn-daily-ghost {
+  background: rgba(236, 253, 245, 0.04);
+  border: 1px solid rgba(236, 253, 245, 0.14);
+  color: #ecfdf5;
+  border-radius: 999px;
+  padding: 6px 14px 7px;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+.btn-daily-ghost:hover {
+  background: rgba(236, 253, 245, 0.14);
+}
+
+@media (max-width: 720px) {
+  .daily-surah-card {
+    margin-inline: 1rem;
+    flex-direction: column;
+  }
+  .daily-actions {
+    flex-wrap: wrap;
+  }
+}
+
+.daily-surah-card {
+  background: radial-gradient(circle at top, rgba(52, 211, 153, 0.12) 0%, rgba(2, 44, 34, 0.55) 75%);
+  border: 1px solid rgba(163, 230, 207, 0.42);
+  border-radius: 18px;
+  margin: 18px auto 24px;
+  max-width: 1050px;
+  padding: 16px 20px 18px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+.daily-left {
+  flex: 1;
+}
+
+.daily-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgba(2, 44, 34, 0.5);
+  width: fit-content;
+  padding: 3px 12px 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(163, 230, 207, 0.25);
+  color: #d1fae5;
+  margin-bottom: 6px;
+}
+
+.daily-surah-card h3 {
+  margin: 0 0 4px;
+  font-size: 1.25rem;
+  font-weight: 650;
+}
+
+.daily-note {
+  margin: 0 0 10px;
+  color: rgba(240, 253, 250, 0.75);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  max-width: 540px;
+}
+
+.daily-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-daily-primary {
+  background: linear-gradient(135deg, #10b981 0%, #047857 95%);
+  color: #ecfdf5;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 16px 7px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35);
+  transition: 0.12s ease;
+}
+.btn-daily-primary:hover {
+  filter: brightness(1.04);
+  transform: translateY(-1px);
+}
+
+.btn-daily-ghost {
+  background: rgba(236, 253, 245, 0.04);
+  border: 1px solid rgba(236, 253, 245, 0.14);
+  color: #ecfdf5;
+  border-radius: 999px;
+  padding: 6px 14px 7px;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+.btn-daily-ghost:hover {
+  background: rgba(236, 253, 245, 0.14);
+}
+
+@media (max-width: 720px) {
+  .daily-surah-card {
+    margin-inline: 1rem;
+    flex-direction: column;
+  }
+  .daily-actions {
+    flex-wrap: wrap;
+  }
+}
+
+.progress-open {
+  background: linear-gradient(135deg, #38bdf8 0%, #0f766e 100%);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  color: #ecfeff;
+  font-weight: 600;
+  font-size: 0.76rem;
+  border-radius: 999px;
+  padding: 6px 16px 7px;
+  margin-top: 6px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.25);
+  transition: all 0.18s ease;
+}
+
+.progress-open:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 32px rgba(56, 189, 248, 0.35);
+}
+
+.progress-open:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.3);
+}
+
+.journal-card-actions .journal-btn {
+  border-radius: 999px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+}
+
+/* Edit = ocean / matches your green theme */
+.journal-card-actions .journal-btn.edit {
+  background: linear-gradient(135deg, #38bdf8 0%, #0f766e 90%);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  color: #ecfeff;
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.25);
+}
+.journal-card-actions .journal-btn.edit:hover {
+  filter: brightness(1.03);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(56, 189, 248, 0.35);
+}
+
+/* Delete = proper red */
+.journal-card-actions .journal-btn.danger {
+  background: radial-gradient(circle at top, #f43f5e 0%, #991b1b 80%);
+  border: 1px solid rgba(244, 63, 94, 0.4);
+  color: #fff1f2;
+  box-shadow: 0 8px 22px rgba(244, 63, 94, 0.25);
+}
+.journal-card-actions .journal-btn.danger:hover {
+  filter: brightness(1.03);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(244, 63, 94, 0.35);
+}
+
+/* Open = soft amber so it’s different */
+.journal-card-actions .journal-btn.ghost {
+  background: radial-gradient(circle at top, #fde68a 0%, #f59e0b 70%);
+  border: 1px solid rgba(252, 211, 77, 0.65);
+  color: #2f1e05;
+  box-shadow: 0 8px 22px rgba(245, 158, 11, 0.25);
+}
+.journal-card-actions .journal-btn.ghost:hover {
+  filter: brightness(1.02);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(245, 158, 11, 0.35);
+}
+.journal-page .journal-shell {
+  max-width: 880px;
+  margin: 48px auto 60px;
+  padding: 0 20px;
+}
+
+/* journal uses the same top header as progress → so hide any old green header classes */
+.journal-page .top,
+.journal-page .top-announcement {
+  display: none;
+}
+
+.journal-shell {
+  max-width: 980px;
+  margin: 32px auto 50px;
+  padding: 0 20px 50px;
+}
+
+.journal-head {
+  margin-bottom: 22px;
+}
+
+.journal-badge {
+  display: inline-flex;
+  background: rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  color: #e2f3ee;
+  border-radius: 999px;
+  padding: 4px 14px 5px;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+}
+
+.journal-title-main {
+  font-size: 1.8rem;
+  margin: 10px 0 6px;
+  font-weight: 650;
+}
+
+.journal-subtitle-main {
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 540px;
+  line-height: 1.4;
+}
+
+.journal-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.journal-card-ui {
+  background: rgba(11, 17, 25, 0.45);
+  border: 1px solid rgba(11, 17, 25, 0.15);
+  border-radius: 18px;
+  padding: 16px 18px;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(24px);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.15);
+}
+
+.journal-card-ui:hover {
+  border-color: rgba(56, 189, 248, 0.2);
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.055) 0%, rgba(11, 17, 25, 0.2) 60%);
+}
+
+.journal-card-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.journal-card-title {
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.journal-card-note {
+  margin: 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 600px;
+  overflow-wrap: anywhere;
+}
+
+.journal-card-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.journal-badge-soft {
+  background: rgba(13, 148, 136, 0.16);
+  border: 1px solid rgba(13, 148, 136, 0.4);
+  color: #ccfbf1;
+  font-size: 0.7rem;
+  border-radius: 999px;
+  padding: 2px 10px 4px;
+}
+
+.journal-time {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.journal-card-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.journal-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.035);
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 12px 5px;
+  font-size: 0.66rem;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+.journal-btn:hover {
+  background: rgba(56, 189, 248, 0.95);
+  color: #02131b;
+}
+.journal-btn.danger {
+  background: rgba(248, 113, 113, 0.16);
+  border: 1px solid rgba(248, 113, 113, 0.12);
+  color: #fee2e2;
+}
+.journal-btn.danger:hover {
+  background: #f43f5e;
+  color: #fff;
+}
+.journal-btn.ghost {
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.classy-modal {
+  background: rgba(7, 11, 19, 0.88);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  border-radius: 18px;
+}
+
+@media (max-width: 720px) {
+  .journal-card-ui {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .journal-card-actions {
+    margin-top: 10px;
+  }
+}
+
+/* make all top headers green like home */
+.top.top--green {
+  background: #0a4740;
+  border-bottom: 1px solid rgba(18, 92, 77, 0.5);
+}
+.top.top--green .nav a.active {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.nav-links a.active {
+  color: #34d399;
+  border-bottom: 2px solid #34d399;
+  padding-bottom: 4px;
+  background: radial-gradient(circle, rgba(52,211,153,0.15) 0%, rgba(15,59,55,0) 55%);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+}
+
+header {
+  width: 100%;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* 1️⃣ thin banner */
+.top-banner {
+  background: #002020;
+  color: #cde6df;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  letter-spacing: 0.01em;
+}
+.top-banner a {
+  color: #8bf5d4;
+  text-decoration: underline;
+}
+.top-banner a:hover {
+  color: #aefce3;
+}
+
+/* 2️⃣ main nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0f3b37;
+  padding: 14px 36px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 120;
+}
+
+.brand {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.015em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* nav links */
+.nav-links {
+  display: flex;
+  gap: 22px;
+}
+.nav-links a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease, background 0.2s ease;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.nav-links a:hover {
+  color: #a7f3d0;
+  background: rgba(255, 255, 255, 0.08);
+}
+.nav-links a.active {
+  color: #34d399;
+  border-bottom: 2px solid #34d399;
+  padding-bottom: 4px;
+}
+
+@media (max-width: 720px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+    gap: 10px;
+  }
+  .nav-links {
+    gap: 14px;
+  }
+}
+
+/* 1. bigger app header */
+header.top {
+  position: sticky;
+  top: 0;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 78px;             /* 👉 bigger */
+  padding: 16px 28px;
+  background: rgba(0, 37, 38, 0.9);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.35rem;            /* 👉 bigger text */
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 2. full-screen hero */
+.hero-landing {
+  position: relative;
+  height: calc(100vh - 78px);    /* full screen below header */
+  min-height: 460px;
+  overflow: hidden;
+}
+
+.hero-body {
+  position: relative;
+  z-index: 2;
+  max-width: 950px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 30px 1.6rem 40px;
+}
+
+.hero-title {
+  font-size: 2.9rem;             /* more hero */
+  line-height: 1.08;
+}
+
+/* 3. hide surah grid first */
+.hidden-grid {
+  display: none;
+}
+
+.hero-landing {
+  position: relative;
+  height: 400px; /* taller hero */
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7) saturate(0.9);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(11, 18, 32, 0.85) 70%,
+    rgba(11, 18, 32, 1) 100%
+  );
+}
+
+.hero-body {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px 1.5rem 40px;
+  color: #fff;
+  text-align: left;
+}
+
+.hero-pill {
+  background: rgba(15, 118, 110, 0.3);
+  border: 1px solid rgba(94, 234, 212, 0.2);
+  color: #a7f3d0;
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 0.8rem;
+  width: fit-content;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+}
+
+.hero-subtitle {
+  color: rgba(240, 255, 255, 0.85);
+  font-size: 1rem;
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 8px 20px 9px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.hero-btn.primary {
+  background: linear-gradient(90deg, #0f766e, #115e59);
+  color: #fff;
+  box-shadow: 0 14px 35px rgba(15, 118, 110, 0.45);
+}
+.hero-btn.primary:hover {
+  filter: brightness(1.08);
+}
+
+.hero-btn.ghost {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e0f2f1;
+}
+.hero-btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+@media (max-width: 720px) {
+  .hero-landing {
+    height: 320px;
+  }
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+header.top {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 68px;
+  padding: 14px 26px;
+  background: rgba(0, 37, 38, 0.9);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.search {
+  background: rgba(1, 60, 62, 0.28);
+  border: 1px solid rgba(159, 176, 200, 0.25);
+  border-radius: 999px;
+  padding: 8px 16px;
+  min-width: 320px;
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  background: rgba(1, 35, 33, 0.4);
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.nav a {
+  padding: 6px 16px 7px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: rgba(231, 233, 238, 0.7);
+}
+.nav a.active {
+  background: #0f766e;
+  color: #fff;
+  box-shadow: 0 12px 25px rgba(15, 118, 110, 0.4);
+}
+
+/* 🌿 Hero video section */
+.hero-landing {
+  position: relative;
+  height: 260px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8) saturate(0.8);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(0, 0, 0, 0.4) 0%, rgba(7, 10, 16, 0.95) 80%);
+}
+
+.hero-body {
+  position: relative;
+  z-index: 2;
+  max-width: 1050px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 1.2rem 26px;
+  color: #fff;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(6, 95, 91, 0.32);
+  border: 1px solid rgba(186, 231, 220, 0.28);
+  border-radius: 999px;
+  padding: 4px 14px 5px;
+  font-size: 0.7rem;
+  color: #e0fff8;
+  width: fit-content;
+}
+.hero-pill::before {
+  content: "●";
+  font-size: 0.5rem;
+  color: #34d399;
+}
+
+.hero-title {
+  font-size: clamp(1.6rem, 3.2vw, 2.05rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.hero-subtitle {
+  color: rgba(232, 241, 244, 0.7);
+  max-width: 560px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 6px 16px 7px;
+  border: 1px solid transparent;
+  transition: 0.15s ease;
+}
+
+.hero-btn.primary {
+  background: #0f766e;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 14px 35px rgba(15, 118, 110, 0.45);
+}
+.hero-btn.primary:hover {
+  filter: brightness(1.08);
+}
+.hero-btn.ghost {
+  background: rgba(11, 17, 17, 0.25);
+  border-color: rgba(227, 246, 243, 0.14);
+  color: #d1faf5;
+}
+
+#surah-grid {
+  margin-top: 10px;
+}
+
+@media (max-width: 720px) {
+  .hero-landing {
+    height: 290px;
+  }
+  .hero-body {
+    padding-inline: 1rem;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+  .search {
+    min-width: 180px;
+  }
+}
+
+header.top {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 68px;
+  padding: 14px 26px;
+  background: rgba(0, 37, 38, 0.9); /* deep green */
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.brand::before {
+  content: "🕋";
+  font-size: 1rem;
+}
+
+.search {
+  background: rgba(1, 60, 62, 0.28);
+  border: 1px solid rgba(159, 176, 200, 0.25);
+  border-radius: 999px;
+  padding: 8px 16px;
+  min-width: 320px;
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  background: rgba(1, 35, 33, 0.4);
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.nav a {
+  padding: 6px 16px 7px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: rgba(231, 233, 238, 0.7);
+}
+.nav a.active {
+  background: #0f766e;
+  color: #fff;
+  box-shadow: 0 12px 25px rgba(15, 118, 110, 0.4);
+}
+
+/* ─────────────────────────────
+   Hero with video (index / surah browser)
+   ───────────────────────────── */
+.hero-landing {
+  position: relative;
+  height: 260px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.5);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(0,0,0,0.4) 0%, rgba(7, 10, 16, 0.95) 80%);
+}
+
+.hero-body {
+  position: relative;
+  z-index: 2;
+  max-width: 1050px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 1.2rem 26px;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(6, 95, 91, 0.32);
+  border: 1px solid rgba(186, 231, 220, 0.28);
+  border-radius: 999px;
+  padding: 4px 14px 5px;
+  font-size: 0.7rem;
+  color: #e0fff8;
+  width: fit-content;
+}
+.hero-pill::before {
+  content: "●";
+  font-size: 0.5rem;
+  color: #34d399;
+}
+
+.hero-title {
+  font-size: clamp(1.6rem, 3.2vw, 2.05rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.hero-subtitle {
+  color: rgba(232, 241, 244, 0.7);
+  max-width: 560px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 6px 16px 7px;
+  border: 1px solid transparent;
+}
+
+.hero-btn.primary {
+  background: #0f766e;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 14px 35px rgba(15, 118, 110, 0.45);
+}
+.hero-btn.primary:hover {
+  filter: brightness(1.05);
+}
+.hero-btn.ghost {
+  background: rgba(11, 17, 17, 0.25);
+  border-color: rgba(227, 246, 243, 0.14);
+  color: #d1faf5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 22px 16px 50px;
+}
+
+/* little push when below hero */
+#surah-grid {
+  margin-top: 6px;
+}
+
+/* mobile */
+@media (max-width: 720px) {
+  .hero-landing {
+    height: 290px;
+  }
+  .hero-body {
+    padding-inline: 1rem;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+  .search {
+    min-width: 180px;
+  }
+}
+
+header.top {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  /* taller */
+  min-height: 66px;
+  padding: 14px 26px;
+  /* glassy bar */
+  background: radial-gradient(circle at top, rgba(11, 18, 32, 0.95) 0%, rgba(11, 18, 32, 0.55) 70%) ;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(175, 209, 255, 0.03);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* little left icon bar like real apps */
+header.top::before {
+  content: "";
+  width: 4px;
+  height: 30px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #38bdf8 0%, #3b82f6 70%, transparent 100%);
+  opacity: 0.95;
+  margin-right: 4px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand::before {
+  content: "📖";
+  font-size: 1.05rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.3));
+}
+
+/* search = a bit taller + nicer radius */
+.search {
+  background: rgba(10, 16, 27, 0.45);
+  border: 1px solid rgba(40, 125, 215, 0.18);
+  border-radius: 999px;
+  padding: 8px 16px 8px 16px;
+  color: #fff;
+  min-width: 340px;
+  outline: none;
+  transition: 0.12s ease;
+}
+.search:focus {
+  background: rgba(7, 11, 19, 0.9);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.08);
+}
+
+/* right nav = more appy */
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  background: rgba(11, 18, 32, 0.25);
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.nav a {
+  color: rgba(231, 233, 238, 0.65);
+  text-decoration: none;
+  font-size: 0.78rem;
+  padding: 6px 16px 7px;
+  border-radius: 999px;
+  transition: 0.12s ease;
+}
+
+.nav a:hover {
+  background: rgba(232, 250, 255, 0.04);
+  color: #fff;
+}
+
+.nav a.active {
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.65) 0%, rgba(17, 24, 39, 0.05) 100%);
+  color: #0f172a;
+  font-weight: 600;
+  box-shadow: 0 12px 40px rgba(56, 189, 248, 0.35);
+}
+
+/* body content a bit lower because header is taller */
+.container {
+  padding-top: 22px;
+}
+
+:root {
+  --bg: #0b1220;
+  --panel: #0e1628;
+  --card: #111a2e;
+  --text: #e7e9ee;
+  --muted: #9fb0c8;
+  --accent: #2aa5f9;
+  --border: #1c2740;
+  --danger: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header.top {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: linear-gradient(180deg, #0b1220 0%, #0b1220cc 70%, #0b122000 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.search {
+  background: #0f1829;
+  border: 1px solid #1c2740;
+  border-radius: 999px;
+  padding: 6px 14px;
+  color: white;
+  min-width: 280px;
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+}
+
+.nav a {
+  color: #9fb0c8;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.nav a.active {
+  background: rgba(42, 165, 249, 0.12);
+  color: white;
+}
+
+.container {
+  padding: 14px 16px 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid rgba(28, 39, 64, 0.4);
+  border-radius: 14px;
+  padding: 12px 12px 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.small {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.btn {
+  background: var(--accent);
+  color: #001220;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.btn.secondary {
+  background: #1f2b46;
+  color: #dbe7ff;
+  border: 1px solid var(--border);
+}
+
+.btn.danger {
+  background: var(--danger);
+  color: #ffffff;
+}
+
+.notice {
+  padding: 10px 12px;
+  background: #241a00;
+  color: #ffd166;
+  border: 1px solid #5b4a17;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.progress {
+  height: 6px;
+  background: #20304f;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress > span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  width: 0%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #1c2740;
+  color: #a5ceff;
+  font-size: 12px;
+  border: 1px solid var(--border);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #0009;
+}
+
+.modal .content {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  width: min(520px, 92vw);
+}
+
+.modal label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  margin: 6px 0 12px;
+  background: #0b1220;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.modal .row {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.modal.show {
+  display: flex;
+}
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: var(--text);
+  font-size: 14px;
+  opacity: 0.95;
+}
+.toast.show {
+  animation: fadeinout 3s forwards;
+}
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  10%,
+  90% {
+    opacity: 0.95;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--panel);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+.ayah {
+  background: rgba(15, 24, 41, 0.35);
+  border: 1px solid rgba(28, 39, 64, 0.25);
+  border-radius: 14px;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+}
+
+.ayah-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.ayah-check {
+  margin-top: 6px;
+  accent-color: #2aa5f9;
+  transform: scale(1.05);
+}
+
+.ayah-body {
+  flex: 1;
+}
+
+.ayah-key {
+  color: #8ba1c0;
+  margin-bottom: 4px;
+}
+
+.ayah-ar {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: right;
+  direction: rtl;
+  margin-bottom: 6px;
+}
+
+.ayah-tr {
+  line-height: 1.4;
+}
+.small-btn {
+  padding: 4px 10px;
+  font-size: 11px;
+  margin-top: 6px;
+}
+.panel-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.panel + .panel {
+  margin-top: 20px;
+}
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.panel-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.panel-content {
+  font-size: 14px;
+  line-height: 1.6;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+code {
+  background: #1c2740;
+  padding: 2px 4px;
+  border-radius: 6px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 13px;
+}
+#journalModal {
+  cursor: pointer;
+}
+#journalModal .content {
+  cursor: default;
+}
+.panel-footer {
+  margin-top: 16px;
+  text-align: right;
+  font-size: 12px;
+  color: var(--muted);
+}
+.panel-footer a {
+  color: var(--muted);
+}
+.panel-footer a:hover {
+  color: var(--accent);
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 600px) {
+  .panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+/* JOURNAL PAGE */
+.journal-wrapper {
+  max-width: 920px;
+  margin: 48px auto;
+  color: #fff;
+}
+.ayah-audio-btns {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.play-btn {
+  background: rgba(56, 189, 248, 0.25);
+  color: #bae6fd;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+.play-btn:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.stop-btn {
+  background: rgba(248, 113, 113, 0.12);
+  color: #fecaca;
+  border: 1px solid rgba(248, 113, 113, 0.1);
+}
+.stop-btn:hover {
+  background: #f43f5e;
+  color: #fff;
+}
+
+.journal-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.journal-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.journal-card {
+  background: rgba(7, 11, 19, 0.55);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.table-journal {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table-journal thead {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+.table-journal th {
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 0.78rem;
+  padding: 14px 18px;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.table-journal td {
+  padding: 14px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.025);
+  vertical-align: top;
+  font-size: 0.85rem;
+  color: #fff;
+}
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #0f172a;
+  padding: 24px 30px;
+  border-radius: 16px;
+  width: 380px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.modal-content label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.modal-content textarea,
+.modal-content input {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.9rem;
+  resize: none;
+}
+
+.modal-actions {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-actions button {
+  background: #38bdf8;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 16px;
+  color: #0f172a;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal-actions button.danger {
+  background: rgba(248, 113, 113, 0.2);
+  color: #fca5a5;
+}
+
+.modal-actions button:hover {
+  opacity: 0.85;
+}
+
+
+.table-journal tbody tr:hover {
+  background: rgba(148, 163, 184, 0.04);
+}
+
+.table-journal td.notes-cell {
+  word-break: break-word;
+}
+
+.table-journal td.actions {
+  white-space: nowrap;
+  display: flex;
+  gap: 6px;
+}
+
+.journal-btn {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+  color: #fff;
+  padding: 4px 14px 5px;
+  font-size: 0.74rem;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.journal-btn:hover {
+  background: #38bdf8;
+  border-color: transparent;
+  color: #0f172a;
+}
+
+.journal-btn.danger {
+  background: rgba(248, 113, 113, 0.1);
+  color: #fee2e2;
+  border: 1px solid rgba(248, 113, 113, 0.12);
+}
+
+.journal-btn.danger:hover {
+  background: #f43f5e;
+  color: #fff;
+}
+.journal-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.95rem;
+}
+.journal-empty .icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  display: block;
+}
+.journal-modal .content {
+  background: rgba(7, 11, 19, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.journal-modal label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.ayah-audio-btns {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.play-btn {
+  background: rgba(56, 189, 248, 0.25);
+  color: #bae6fd;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+.play-btn:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.stop-btn {
+  background: rgba(248, 113, 113, 0.12);
+  color: #fecaca;
+  border: 1px solid rgba(248, 113, 113, 0.1);
+}
+.stop-btn:hover {
+  background: #f43f5e;
+  color: #fff;
+}
+
+
+/* PROGRESS PAGE */
+.progress-wrapper {
+  max-width: 880px;
+  margin: 48px auto 0;
+  color: #fff;
+}
+
+.progress-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.progress-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 18px;
+}
+
+.progress-empty {
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.progress-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-item {
+  background: rgba(7, 11, 19, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.progress-left {
+  min-width: 0; /* allow text wrap */
+}
+
+.progress-surah {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.progress-note {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.4);
+  max-width: 420px;
+  overflow-wrap: anywhere;
+}
+
+.progress-right {
+  text-align: right;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.progress-count {
+  font-size: 0.78rem;
+  color: #fff;
+}
+.progress-bar-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+  overflow: hidden;
+  height: 8px;
+  margin-top: 6px;
+}
+.progress-bar {
+  height: 100%;
+  background: #38bdf8;
+  width: 0%;
+}
+@media (max-width: 600px) {
+  .progress-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .progress-right {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+/* progress bar */
+.progress-bar-shell {
+  width: 100%;
+  max-width: 480px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #38bdf8 0%, #a855f7 100%);
+  transition: width 0.3s ease;
+}
+
+.progress-percent {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 22px;
+}
+.progress-description {
+  font-size: 0. ninerem;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 600px;
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .progress-bar-shell {
+    max-width: 100%;
+  }
+}
+.surah-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+#stop-audio {
+  background: rgba(248, 113, 113, 0.12);
+  color: #fee2e2;
+  border: 1px solid rgba(248, 113, 113, 0.08);
+}
+#stop-audio:hover {
+  background: rgba(248, 113, 113, 0.4);
+  color: #fff;
+}
+#play-audio {
+  background: #38bdf8;
+  color: #0f172a;
+}
+#play-audio:hover {
+  opacity: 0.85;
+}
+.audio-status {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 6px;
+}
+@media (max-width: 600px) {
+  .surah-actions {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+#stopAudioBtn {
+  background: rgba(248, 113, 113, 0.08);
+  color: #fee2e2;
+  border: 1px solid rgba(248, 113, 113, 0.08);
+}
+#stopAudioBtn:hover {
+  background: rgba(248, 113, 113, 0.4);
+  color: #fff;
+}
+#playAudioBtn {
+  background: #38bdf8;
+  color: #0f172a;
+}
+#playAudioBtn:hover {
+  opacity: 0.85;
+}
+.audio-status {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 6px;
+}
+@media (max-width: 600px) {
+  .surah-actions {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+/* ayah when playing (like quran.com style) */
+.ayah--playing {
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.18) 0%, rgba(15, 23, 42, 0.25) 60%);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.25),
+              0 0 18px rgba(56, 189, 248, 0.25);
+  transform: translateY(-1px);
+  transition: 0.12s ease;
+}
+
+.ayah--playing .ayah-ar {
+  color: #e2f3ff;
+}
+
+.ayah--playing .ayah-key {
+  color: rgba(226, 243, 255, 0.6);
+}
+.ayah--playing .ayah-tr {
+  color: #cce4ff;
+}
+.ayah--playing .ayah-audio-btns .play-btn {
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+}
+.ayah--playing .ayah-audio-btns .stop-btn {
+  background: rgba(248, 113, 113, 0.2);
+  color: #fca5a5;
+  border: none;
+}
+.ayah--playing .ayah-audio-btns .play-btn:hover {
+  opacity: 0.85;
+}
+.ayah--playing .ayah-audio-btns .stop-btn:hover {
+  background: #f43f5e;
+  color: #fff;
+}
+/* FINAL OVERRIDE – keep header dark blue */
+header.top {
+  background: linear-gradient(180deg, #0f172a 0%, #0a1220 90%) !important;
+  backdrop-filter: blur(14px);
+}
+/* ==== FINAL OVERRIDE – SOFT DARK BLUE HEADER ==== */
+:root {
+  --qj-blue-1: #121b2f;   /* lighter navy top */
+  --qj-blue-2: #0c1425;   /* base blue bottom */
+  --qj-blue-accent: #3b82f6; /* bright blue highlight */
+}
+
+/* header / top bar / main nav */
+header.top,
+.top.top--green,
+.main-nav {
+  background: linear-gradient(180deg, var(--qj-blue-1) 0%, var(--qj-blue-2) 100%) !important;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.18) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25) !important;
+  backdrop-filter: blur(14px);
+  transition: background 0.3s ease;
+}
+
+/* thin banner also soft blue */
+.top-banner {
+  background: rgba(15, 23, 42, 0.85) !important;
+  color: #dce5f5 !important;
+}
+
+/* nav container (the pill behind links) */
+.nav,
+.nav-links {
+  background: rgba(17, 25, 40, 0.45) !important;
+  border: 1px solid rgba(148, 163, 184, 0.08) !important;
+}
+
+/* active links – soft sky blue accent */
+.nav a.active,
+.nav-links a.active {
+  background: radial-gradient(circle at top, var(--qj-blue-accent) 0%, rgba(17, 25, 40, 0) 80%) !important;
+  color: #fff !important;
+  border-bottom: none !important;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+/* search bar inside header */
+header.top .search,
+.main-nav .search {
+  background: rgba(15, 23, 42, 0.6) !important;
+  border: 1px solid rgba(59, 130, 246, 0.25) !important;
+  color: #fff !important;
+}
+/* ==== SOFT BLUE ACCENTS – Quran Journal ==== */
+
+/* 1️⃣ Quran Journal Companion pill */
+.hero-pill {
+  background: rgba(37, 99, 235, 0.25) !important;       /* soft blue */
+  border: 1px solid rgba(147, 197, 253, 0.35) !important;
+  color: #cfe3ff !important;                             /* text blueish white */
+  text-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+}
+
+/* 2️⃣ Main hero button (Open Surahs, etc.) */
+.hero-btn.primary {
+  background: linear-gradient(90deg, #2563eb 0%, #1e3a8a 100%) !important; /* vivid blue gradient */
+  color: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
+}
+.hero-btn.primary:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 12px 36px rgba(37, 99, 235, 0.45);
+}
+
+/* 3️⃣ Bubble (Today's Surah Suggestion) */
+.daily-float-card {
+  background: radial-gradient(circle at top,
+      rgba(37, 99, 235, 0.9) 0%,      /* strong royal blue top */
+      rgba(12, 20, 37, 0.85) 80%) !important; /* deep blue bottom */
+  border: 1px solid rgba(147, 197, 253, 0.25) !important;
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.35);
+}
+
+/* glowing heart icon inside bubble */
+.daily-icon {
+  background: radial-gradient(circle, #60a5fa 0%, rgba(37, 99, 235, 0) 75%) !important;
+  filter: drop-shadow(0 0 14px rgba(37, 99, 235, 0.55));
+}
+
+/* badge in bubble */
+.daily-label {
+  background: rgba(37, 99, 235, 0.25) !important;
+  border: 1px solid rgba(147, 197, 253, 0.35) !important;
+  color: #dbeafe !important;
+}
+
+/* bubble buttons (Read Now / Not Now) */
+.daily-primary {
+  background: #dbeafe !important;
+  color: #1e3a8a !important;
+  box-shadow: 0 12px 30px rgba(147, 197, 253, 0.4);
+}
+.daily-secondary {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(147, 197, 253, 0.15) !important;
+  color: #cfe3ff !important;
+}
+/* ==== FORCE SURAH BUBBLE TO BLUE (all versions) ==== */
+
+/* 1. main circle – covers: .hero-reminder, #dailyBubble, .daily-float-card */
+.hero-reminder,
+#dailyBubble,
+.daily-float-card {
+  background: radial-gradient(circle at top,
+      rgba(37, 99, 235, 0.9) 0%,        /* bright royal blue top */
+      rgba(10, 15, 26, 0.95) 70%) !important; /* deep navy bottom */
+  border: 1px solid rgba(147, 197, 253, 0.35) !important;
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.35) !important;
+  backdrop-filter: blur(14px);
+  color: #e2e8f0;
+}
+
+/* 2. little top badge in bubble */
+.hero-reminder .reminder-badge,
+#dailyBubble .reminder-badge,
+.daily-float-card .daily-label {
+  background: rgba(37, 99, 235, 0.35) !important;
+  border: 1px solid rgba(191, 219, 254, 0.35) !important;
+  color: #e2e8f0 !important;
+}
+
+/* 3. heart / icon glow */
+.hero-reminder .reminder-icon,
+#dailyBubble .reminder-icon,
+.daily-float-card .daily-icon {
+  background: radial-gradient(circle, #bfdbfe 0%, rgba(37, 99, 235, 0) 75%) !important;
+  filter: drop-shadow(0 0 16px rgba(191, 219, 254, 0.6));
+}
+
+/* 4. buttons inside bubble */
+.hero-reminder .reminder-btn.primary,
+#dailyBubble .reminder-btn.primary,
+.daily-float-card .daily-primary {
+  background: #dbeafe !important;
+  color: #1e3a8a !important;
+  box-shadow: 0 10px 26px rgba(191, 219, 254, 0.4);
+}
+.hero-reminder .reminder-btn.ghost,
+#dailyBubble .reminder-btn.ghost,
+.daily-float-card .daily-secondary {
+  background: rgba(15, 23, 42, 0.28) !important;
+  border: 1px solid rgba(148, 163, 184, 0.25) !important;
+  color: #e2e8f0 !important;
+}
+
+/* 5. in case one of the old versions positioned it too high/low */
+.hero-reminder,
+#dailyBubble {
+  right: 3% !important;
+  bottom: 60% !important;
+}
+/* ==== ALIGN HERO TEXT TO THE LEFT ==== */
+.hero-body {
+  text-align: left !important;           /* make all text left-aligned */
+  align-items: flex-start !important;    /* push content to the left side */
+  justify-content: center !important;    /* keep vertical centering */
+  padding-left: 0%;                      /* adjust spacing from left edge */
+  max-width: 520px;                      /* keep text box narrow and elegant */
+}
+
+/* move the small badge (Your Quran Journal Companion) a bit left too */
+.hero-pill {
+  margin-left: 0 !important;
+}
+
+/* keep "Open Surahs" button aligned properly under text */
+.hero-actions {
+  justify-content: flex-start !important;
+}
+
+/* on smaller screens, still looks clean */
+@media (max-width: 720px) {
+  .hero-body {
+    padding-left: 0.2rem;
+    max-width: 100%;
+  }
+}
+/* ==== FINAL HERO TEXT POSITION (LEFT + CENTER HEIGHT) ==== */
+.hero-landing,
+.hero-landing.hero-full {
+  position: relative;
+}
+
+.hero-body {
+  position: absolute !important;
+  top: 50% !important;                 /* tengah vertikal */
+  left: 3.5% !important;               /* rapat kiri */
+  transform: translateY(-50%) !important;
+  text-align: left !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  max-width: 460px;                    /* cukup untuk title + ayat */
+  padding: 0 !important;               /* buang padding yang tolak ke bawah */
+  gap: 0.5rem;
+}
+
+/* kecilkan pill supaya ikut kiri */
+.hero-pill {
+  margin-left: 0 !important;
+}
+
+/* butang bawah tu ikut kiri juga */
+.hero-actions {
+  justify-content: flex-start !important;
+}
+
+/* phone / screen kecik: bagi turun sikit supaya tak overlap */
+@media (max-width: 768px) {
+  .hero-body {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    padding: 1.2rem 1.1rem 2rem !important;
+    max-width: 100%;
+  }
+}
+/* ==== HERO TEXT EMPHASIS BOX ==== */
+.hero-body {
+  position: absolute !important;
+  top: 50% !important;
+  left: 4% !important;
+  transform: translateY(-50%) !important;
+  text-align: left !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  max-width: 540px;
+  padding: 28px 36px !important;
+  background: rgba(15, 23, 42, 0.55);          /* translucent navy box */
+  border: 1px solid rgba(148, 163, 184, 0.15); /* subtle border */
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* title — bigger and more focus */
+.hero-title {
+  font-size: 3rem !important;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+  margin-bottom: 8px;
+}
+
+/* subtitle (Explore 114 surahs...) — slightly brighter */
+.hero-subtitle {
+  font-size: 1.05rem !important;
+  color: rgba(226, 232, 240, 0.9);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* small badge */
+.hero-pill {
+  background: rgba(37, 99, 235, 0.25) !important;
+  border: 1px solid rgba(147, 197, 253, 0.35) !important;
+  color: #cfe3ff !important;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+}
+
+/* button */
+.hero-btn.primary {
+  background: linear-gradient(90deg, #2563eb 0%, #1e3a8a 100%) !important;
+  color: #fff !important;
+  font-size: 0.95rem !important;
+  padding: 10px 22px 11px !important;
+  border-radius: 999px;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+.hero-btn.primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+/* adjust spacing for buttons */
+.hero-actions {
+  justify-content: flex-start !important;
+}
+
+/* mobile view — box becomes full width */
+@media (max-width: 768px) {
+  .hero-body {
+    position: relative !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    max-width: 30%;
+    margin: 1rem;
+    padding: 1.2rem 1rem;
+  }
+  .hero-title {
+    font-size: 1rem !important;
+  }
+}
+.hero-body {
+  position: absolute !important;
+  top: 48% !important;
+  left: 5% !important;
+  transform: translateY(-50%) !important;
+  max-width: 400px;
+  padding: 24px 28px !important;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(59, 130, 246, 0.25);   /* soft blue border */
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.15); /* faint blue glow */
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+.hero-title {
+  font-size: 2.5rem !important;
+}
+.hero-subtitle {
+  font-size: 1.15rem !important;
+}
+/* ==== HERO TEXT STYLING ==== */
+.hero-pill {
+  font-size: 0.82rem !important;
+  margin-bottom: 8px;
+  background: rgba(37, 99, 235, 0.25);
+  border: 1px solid rgba(147, 197, 253, 0.35);
+  color: #cfe3ff;
+  border-radius: 999px;
+  padding: 4px 14px;
+}
+
+.hero-title {
+  font-size: 3rem !important;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem !important;
+  color: rgba(226, 232, 240, 0.9);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.hero-actions {
+  justify-content: flex-start !important;
+}
+
+/* smaller screens */
+@media (max-width: 768px) {
+  .hero-body {
+    position: relative !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1.2rem 1rem;
+  }
+  .hero-title {
+    font-size: 2rem !important;
+  }
+}
+/* ==== FIX HERO BOX HEIGHT (only wrap text area) ==== */
+.hero-body {
+  height: auto !important;             /* don't stretch full height */
+  width: fit-content !important;       /* shrink to fit content width */
+  max-width: 560px !important;         /* optional: limit width */
+  padding: 24px 34px !important;       /* adjust space around text */
+  background: rgba(15, 23, 42, 0.55) !important;
+  border: 1px solid rgba(147, 197, 253, 0.15);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: inline-block !important;    /* key: makes box only wrap text */
+}
+
+/* ensure text layout stays neat */
+.hero-body * {
+  position: relative;
+  z-index: 2;
+}
+.hero-body {
+  top: 20px !important;               /* or 150px / 200px depending on your liking */
+  transform: none !important;
+}
+/* default nav link */
+header .nav a {
+  background: var(--panel);
+  color: var(--text);
+  opacity: .85;
+}
+
+/* hover for non-active */
+header .nav a:not(.active):hover {
+  opacity: 1;
+  filter: brightness(1.1);
+}
+
+/* the ONLY highlighted state */
+header .nav a.active {
+  background: var(--accent);
+  color: #fff;
+  opacity: 1;
+}
+/* keep the elements, just neutralize the green look */
+.top.top--green { 
+  background: linear-gradient(180deg, #121b2f 0%, #0c1425 100%) !important;
+  border-bottom: 1px solid rgba(59,130,246,.18) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25) !important;
+}
+
+.main-nav,
+.nav-links {
+  background: rgba(17,25,40,.45) !important;
+  border: 1px solid rgba(148,163,184,.08) !important;
+  padding: 4px !important;
+  border-radius: 999px !important;
+}
+
+.nav-links a,
+.nav a {
+  color: rgba(231,233,238,.75) !important;
+  text-decoration: none !important;
+  padding: 6px 16px 7px !important;
+  border-radius: 999px !important;
+  transition: .15s ease !important;
+}
+.nav-links a:hover,
+.nav a:hover {
+  background: rgba(232,250,255,.05) !important;
+  color: #fff !important;
+}
+.nav-links a.active,
+.nav a.active {
+  background: radial-gradient(circle at top, #3b82f6 0%, rgba(17,24,39,0) 80%) !important;
+  color: #fff !important;
+  border-bottom: none !important;
+  box-shadow: 0 10px 25px rgba(59,130,246,.30) !important;
+}
+/* ================================
+   GLOBAL HEADER — FINAL OVERRIDE
+   (put this at the VERY BOTTOM)
+   ================================ */
+
+:root {
+  --hdr-top: #121b2f;   /* soft navy top */
+  --hdr-btm: #0c1425;   /* deep navy bottom */
+  --hdr-accent: #3b82f6;/* sky-blue highlight */
+  --hdr-pill-bg: rgba(17,25,40,0.45);
+  --hdr-pill-brd: rgba(148,163,184,0.10);
+  --hdr-text: rgba(231,233,238,0.78);
+}
+
+/* 1) Make ALL headers identical (home/surah/progress/ma'thurat) */
+header.top,
+.main-nav,
+.top.top--green {
+  position: sticky;
+  top: 0;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 72px;
+  padding: 14px 26px;
+  background: linear-gradient(180deg, var(--hdr-top), var(--hdr-btm)) !important;
+  border-bottom: 1px solid rgba(59,130,246,0.18) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.28) !important;
+  backdrop-filter: blur(14px);
+}
+
+/* 2) Brand (no emoji, consistent size/color) */
+.brand {
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.brand::before { content: none !important; } /* kill any old emoji */
+
+/* 3) Search box (consistent) */
+header.top .search,
+.main-nav .search {
+  background: rgba(15,23,42,0.6) !important;
+  border: 1px solid rgba(59,130,246,0.25) !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+  padding: 8px 16px !important;
+  min-width: 320px;
+}
+
+/* 4) Nav container pill (works for .nav and .nav-links) */
+.nav,
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  background: var(--hdr-pill-bg) !important;
+  border: 1px solid var(--hdr-pill-brd) !important;
+  padding: 4px;
+  border-radius: 999px;
+}
+
+/* 5) Links + active state (one single look everywhere) */
+.nav a,
+.nav-links a {
+  color: var(--hdr-text) !important;
+  text-decoration: none;
+  font-size: 0.78rem;
+  padding: 6px 16px 7px;
+  border-radius: 999px;
+  transition: 0.12s ease;
+  border-bottom: 0 !important;       /* kill old underlines */
+  background: transparent !important;/* reset stray styles */
+}
+
+.nav a:hover,
+.nav-links a:hover {
+  background: rgba(232,250,255,0.05);
+  color: #fff;
+}
+
+.nav a.active,
+.nav-links a.active {
+  background: radial-gradient(circle at top, var(--hdr-accent) 0%, rgba(17,24,39,0.06) 80%) !important;
+  color: #fff !important;
+  box-shadow: 0 12px 36px rgba(59,130,246,0.35);
+}
+
+/* 6) Kill legacy green header styles anywhere */
+.top-banner { background: rgba(15,23,42,0.85) !important; color:#dce5f5 !important; }
+.nav-links a.active { border-bottom: 0 !important; }      /* remove green underline */
+/* ==== AL-MATHURAT RTL SECTION ==== */
+body.almathurat .rtl { direction:rtl; text-align:right; }
+body.almathurat .rtl .container {
+  max-width:900px; margin:80px auto; padding:1rem 1.5rem;
+  background:rgba(15,23,42,.35);
+  border-radius:1.2rem; line-height:2;
+  font-family:"Scheherazade New","Amiri",serif;
+}
+body.almathurat .rtl h2 {
+  color:#38bdf8; margin:1.6rem 0 .6rem; font-size:1.1rem;
+}
+body.almathurat .rtl p { margin:.5rem 0; font-size:1.1rem; }
+body.almathurat .repeat {
+  background:rgba(59,130,246,.15);
+  border:1px solid rgba(59,130,246,.4);
+  border-radius:999px; padding:0 .7rem; font-size:.8rem; margin-left:.4rem;
+}
+body.almathurat audio { width:100%; margin:1rem 0 2rem; }
+body.almathurat .bism {
+  text-align:center; font-size:1.4rem; margin-top:.5rem;
+}
+/* === FINAL OVERRIDE: Dark-Blue Header for All Pages === */
+header.top {
+  background: rgba(11, 18, 32, 0.9) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(175, 209, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav a.active {
+  background: radial-gradient(circle at top, rgba(59, 130, 246, 0.7) 0%, rgba(17, 24, 39, 0.1) 80%) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+}
+
+/* Adjust other parts of the header */
+header.top {
+  background: linear-gradient(180deg, #0f172a 0%, #0a1220 90%) !important;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.nav a.active {
+  background: radial-gradient(circle at top, var(--accent) 0%, #1e293b 80%) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+}
+
+/* header styles for consistency */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #0b1220;
+  color: #fff;
+}
+
+.top-banner {
+  background: #002020;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+}
+
+.top-banner a {
+  color: #8bf5d4;
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  background: rgba(1, 35, 33, 0.4);
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.nav a {
+  padding: 6px 16px 7px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: rgba(231, 233, 238, 0.7);
+}
+
+.nav a.active {
+  background: #0f766e;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(15, 118, 110, 0.4);
+}
+/* FINAL OVERRIDE: Dark-Blue Header */
+header.top {
+  background: rgba(11, 18, 32, 0.9) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(175, 209, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav a.active {
+  background: radial-gradient(circle at top, rgba(59, 130, 246, 0.7) 0%, rgba(17, 24, 39, 0.1) 80%) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+}
+
+/* Consistent header style across pages */
+header.top {
+  background: linear-gradient(180deg, #0f172a 0%, #0a1220 90%) !important;
+  backdrop-filter: blur(14px);
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111a2e;
+  color: #e8ecff;
+}
+
+/* Header Style */
+header.top {
+  background: rgba(11, 18, 32, 0.9);
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(175, 209, 255, 0.1);
+}
+
+header .brand {
+  font-size: 24px;
+  color: #38bdf8;
+}
+
+header .nav {
+  display: flex;
+  gap: 15px;
+}
+
+header .nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+header .nav a:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
+
+header .nav a.active {
+  background: rgba(59, 130, 246, 0.9);
+}
+
+/* Main Container */
+.container {
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.dzikir-list {
+  margin-top: 20px;
+}
+
+.dzikir-item {
+  background: #15213b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.dzikir-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dzikir-item p {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111a2e;
+  margin-top: 20px;
+  color: #94a3c1;
+}
+.progress-bar-shell {
+  width: 100%;
+  max-width: 600px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.05);  
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111a2e;
+  color: #e8ecff;
+}
+
+/* Header Style */
+header.top {
+  background: rgba(11, 18, 32, 0.9);
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(175, 209, 255, 0.1);
+}
+
+header .brand {
+  font-size: 28px; /* Increase brand size */
+  color: #38bdf8;
+}
+
+header .nav {
+  display: flex;
+  gap: 15px;
+}
+
+header .nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px; /* Increase navigation link size */
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+header .nav a:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
+
+header .nav a.active {
+  background: rgba(59, 130, 246, 0.9);
+}
+
+/* Main Container */
+.container {
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #38bdf8;
+  font-size: 36px; /* Increase main heading size */
+  margin-bottom: 15px;
+}
+
+.dzikir-list {
+  margin-top: 20px;
+}
+
+.dzikir-item {
+  background: #15213b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.dzikir-item h3 {
+  font-size: 24px; /* Increase dzikir title size */
+  margin-bottom: 10px;
+}
+
+.dzikir-item p {
+  font-size: 20px; /* Increase dzikir text size */
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111a2e;
+  margin-top: 20px;
+  color: #94a3c1;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111a2e;
+  color: #e8ecff;
+}
+
+/* Header Style */
+header.top {
+  background: rgba(11, 18, 32, 0.9);
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(175, 209, 255, 0.1);
+}
+
+header .brand {
+  font-size: 28px; /* Larger brand size */
+  color: #38bdf8;
+}
+
+header .nav {
+  display: flex;
+  gap: 15px;
+}
+
+header .nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px; /* Larger nav link size */
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+header .nav a:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
+
+header .nav a.active {
+  background: rgba(59, 130, 246, 0.9);
+}
+
+/* Main Container */
+.container {
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #38bdf8;
+  font-size: 36px; /* Larger main title */
+  margin-bottom: 15px;
+}
+
+/* Al-Mathurat Section */
+.almathurat {
+  font-size: 24px; /* Larger font size for Al-Mathurat section */
+  line-height: 1.6; /* Increased line height for better readability */
+}
+
+.dzikir-list {
+  margin-top: 20px;
+}
+
+.dzikir-item {
+  background: #15213b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.dzikir-item h3 {
+  font-size: 28px; /* Larger dzikir title */
+  margin-bottom: 10px;
+}
+
+.dzikir-item p {
+  font-size: 22px; /* Larger dzikir text */
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111a2e;
+  margin-top: 20px;
+  color: #94a3c1;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111a2e;
+  color: #e8ecff;
+}
+
+/* Header Style */
+header.top {
+  background: rgba(11, 18, 32, 0.9);
+  padding: 10px 20px; /* Adjusted padding */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(175, 209, 255, 0.1);
+  box-sizing: border-box; /* Prevents extra space */
+}
+
+header .brand {
+  font-size: 24px; /* Adjusted brand size */
+  color: #38bdf8;
+}
+
+header .nav {
+  display: flex;
+  gap: 15px;
+}
+
+header .nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px; /* Adjusted font size for nav links */
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+header .nav a:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
+
+header .nav a.active {
+  background: rgba(59, 130, 246, 0.9);
+}
+
+/* Main Container */
+.container {
+  margin-top: 80px; /* Ensure content is below fixed header */
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #38bdf8;
+  font-size: 36px; /* Adjust the font size of main titles */
+  margin-bottom: 15px;
+}
+
+/* Adjust for Arabic content (RTL) */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111a2e;
+  margin-top: 20px;
+  color: #94a3c1;
+}
+container {
+  color: #fff; /* White text for visibility */
+  font-size: 36px; /* Increased font size for Surah name */
+  font-weight: bold; /* Optional: to make the title bold */
+  text-align: center; /* Center align the Surah title */
+  margin-top: 60px; /* Adjust the margin to make it fit well */
+}

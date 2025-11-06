@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quran Journal — Surah</title>
+    <!-- allow http/https + media for audio -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data:;
+               connect-src 'self' https://* http://*;
+               img-src 'self' data: https://* http://*;
+               media-src 'self' https://* http://*;
+               style-src 'self' 'unsafe-inline';
+               script-src 'self';"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <button class="btn secondary" id="backBtn">← Back</button>
+      <h3 id="title" style="margin-left:10px;"></h3>
+      <div class="nav" style="margin-left:auto;">
+        <a href="./index.html">Surah Browser</a>
+        <a href="./journal.html">My Journal</a>
+        <a href="./progress.html">Progress</a>
+        <a href="./almathurat.html">Al-Ma’thurat</a>
+        <a href="./daily_dzikir.html">Daily Dzikir</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div id="meta" class="small" style="margin:8px 0 12px;"></div>
+      <div id="err" class="notice" style="display:none;"></div>
+
+      <div class="small" style="margin-bottom:6px;">
+        Tick the ayah you stop at ✅ — next time we open this surah, we jump there. You can only tick <b>one</b> ayah.
+      </div>
+
+      <label class="small" for="perPage">Ayahs per page</label>
+      <select id="perPage">
+        <option value="10">10</option>
+        <option value="20" selected>20</option>
+        <option value="50">50</option>
+      </select>
+
+      <div id="verses"></div>
+
+      <div style="display:flex; gap:8px; justify-content:center; margin:16px 0;">
+        <button class="btn secondary" id="prev">Prev</button>
+        <span id="pageInfo" class="small"></span>
+        <button class="btn" id="next">Next</button>
+      </div>
+
+      <!-- we reuse this for all ayah -->
+      <audio id="ayahPlayer"></audio>
+    </main>
+
+    <script type="module" src="./surah.js"></script>
+  </body>
+</html>

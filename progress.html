@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quran Journal — Progress</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data:;
+               connect-src 'self' https://*;
+               img-src 'self' data: https://*;
+               media-src 'self' https://* file:;
+               style-src 'self' 'unsafe-inline';
+               script-src 'self';"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 🟩 same header as index.html -->
+    <header>
+      <div class="top-banner">
+        🕊️ Give hope to families in Palestine &amp; displaced Palestinians.
+        <a href="https://www.unrwa.org/donate" target="_blank" rel="noopener">Donate now</a>
+      </div>
+      <div class="main-nav">
+        <div class="brand">🕋 Quran Journal</div>
+        <nav class="nav-links">
+          <a href="./index.html">Surah Browser</a>
+          <a href="./journal.html">My Journal</a>
+          <a class="active" href="./progress.html">Progress</a>
+          <a href="./almathurat.html">Al-Ma’thurat</a>
+          <a href="./daily_dzikir.html">Daily Dzikir</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="progress-wrapper">
+      <h1 class="progress-title">Khatam journey</h1>
+
+      <!-- 1: how many surah entries -->
+      <p class="progress-subtitle">
+        Journals saved: <span id="progress-count">0 / 114</span>
+      </p>
+
+      <!-- 2: how many ayahs total -->
+      <p class="progress-subtitle small">
+        Ayahs completed: <span id="progress-ayahs">0 / 6236</span>
+      </p>
+
+      <!-- bar -->
+      <div class="progress-bar-shell">
+        <div id="progress-bar-fill" class="progress-bar-fill"></div>
+      </div>
+      <p class="progress-percent" id="progress-percent">0% completed</p>
+
+      <div id="progress-empty" style="display:none" class="progress-empty">
+        No progress yet. Go to a surah and save a journal ✨
+      </div>
+
+      <ul id="progress-list" class="progress-list"></ul>
+    </main>
+
+    <script type="module" src="./progress.js"></script>
+  </body>
+</html>

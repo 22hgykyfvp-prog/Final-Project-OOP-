@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quran Journal — Surah Browser</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data:;
+               connect-src 'self' https://*;
+               img-src 'self' data: https://*;
+               media-src 'self' https://* file:;
+               style-src 'self' 'unsafe-inline';
+               script-src 'self';"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- 🕌 Header -->
+    <header>
+      <div class="top-banner">
+        🕊️ Give hope to families in Palestine &amp; displaced Palestinians.
+        <a href="https://www.unrwa.org/donate" target="_blank" rel="noopener">Donate now</a>
+      </div>
+
+      <div class="main-nav">
+        <div class="brand">🕋 Quran Journal</div>
+        <nav class="nav-links">
+          <a class="active" href="./index.html">Surah Browser</a>
+          <a href="./journal.html">My Journal</a>
+          <a href="./progress.html">Progress</a>
+          <a href="./almathurat.html">Al-Ma’thurat</a>
+          <a href="./daily_dzikir.html">Daily Dzikir</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 🕌 Hero Section (Full Screen) -->
+    <section class="hero-landing hero-full">
+      <video class="hero-video" autoplay loop muted playsinline preload="auto">
+        <source src="./assets/video/mosque.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+      <!-- 🌙 Hero Text -->
+      <div class="hero-body">
+        <p class="hero-pill">Your Quran Journal Companion</p>
+        <h1 class="hero-title">Read • Reflect • Record</h1>
+        <p class="hero-subtitle">
+          Explore 114 surahs, note your reflections, and continue where you left off.
+        </p>
+        <div class="hero-actions">
+          <a id="heroOpenBtn" href="#surah-grid" class="hero-btn primary">Open Surahs</a>
+        </div>
+      </div>
+
+      <!-- 💗 Floating Circular Reminder -->
+      <!-- ⬇️ change bottom: ...px to move up/down -->
+      <div
+        id="heroReminder"
+        class="hero-reminder"
+        data-surah="56"
+        style="
+          position: absolute;
+          right: 3%;
+          bottom: 520px;      /* ⬅️ make smaller to go DOWN, bigger to go UP */
+          width: 330px;
+          height: 330px;
+          border-radius: 50%;
+          background: radial-gradient(circle at top, rgba(17,94,89,0.9) 0%, rgba(2,10,15,0.8) 70%);
+          border: 1px solid rgba(224,231,255,0.04);
+          backdrop-filter: blur(12px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          text-align: center;
+          box-shadow: 0 18px 48px rgba(0,0,0,0.35);
+          z-index: 6;
+        "
+      >
+        <div
+          class="reminder-icon"
+          style="
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #fb7185 0%, rgba(251,113,133,0) 70%);
+            display: grid;
+            place-items: center;
+            font-size: 1.4rem;
+            filter: drop-shadow(0 0 12px rgba(251,113,133,0.5));
+            margin-bottom: 6px;
+          "
+        >
+          💗
+        </div>
+
+        <div
+          class="reminder-badge"
+          style="
+            background: rgba(5, 41, 118, 0.35);
+            border: 1px solid rgba(186,231,220,0.25);
+            border-radius: 999px;
+            padding: 3px 12px 4px;
+            font-size: 0.68rem;
+            margin-bottom: 6px;
+          "
+        >
+          🌸 TODAY'S SURAH SUGGESTION
+        </div>
+
+        <div
+          class="reminder-title"
+          id="remTitle"
+          style="font-weight: 600; font-size: 1rem;"
+        >
+          Surah Al-Waqi’ah
+        </div>
+
+        <div
+          class="reminder-desc"
+          id="remDesc"
+          style="font-size: 0.75rem; color: rgba(236,252,243,0.75); max-width: 220px; margin-bottom: 10px;"
+        >
+          Read at night — rizq is from Allah 💜
+        </div>
+
+        <div class="reminder-actions" style="display: flex; gap: 8px;">
+          <button
+            class="reminder-btn primary"
+            id="remRead"
+            style="
+              background: #ecfdf5;
+              color: #065f46;
+              border: none;
+              border-radius: 999px;
+              padding: 6px 14px;
+              font-size: 0.72rem;
+              cursor: pointer;
+            "
+          >
+            Read now
+          </button>
+
+          <button
+            class="reminder-btn ghost"
+            id="remLater"
+            style="
+              background: rgba(255,255,255,0.08);
+              color: #fff;
+              border: none;
+              border-radius: 999px;
+              padding: 6px 14px;
+              font-size: 0.72rem;
+              cursor: pointer;
+            "
+          >
+            Not now
+          </button>
+        </div>
+      </div>
+
+      <!-- 🔍 Search Bar (HIDDEN first) -->
+      <div
+        id="heroTools"
+        class="hero-tools"
+        style="display:none; opacity:0; transition: opacity .3s ease;"
+      >
+        <input
+          id="q"
+          class="search"
+          placeholder="Search surah by English, Arabic, or translation..."
+        />
+        <select id="translator" title="Translation"></select>
+      </div>
+    </section>
+
+    <!-- 📖 Surah Grid -->
+    <main class="container hidden-grid" id="surah-grid">
+      <div id="alert" class="notice" style="display:none;"></div>
+
+      <div style="display:flex; gap:8px; align-items:center; margin-bottom:10px;">
+        <button id="refresh" class="btn secondary">Refresh</button>
+        <span id="info" class="small"></span>
+      </div>
+
+      <div id="list" class="grid"></div>
+    </main>
+
+    <!-- 📝 Journal Modal -->
+    <div class="modal" id="journalModal">
+      <div class="content">
+        <h4 id="jmTitle">Edit Journal</h4>
+        <label>Ayahs Completed</label>
+        <input type="number" id="jmAyahs" min="0" />
+        <label>Notes</label>
+        <textarea id="jmNotes" rows="4" placeholder="Your reflection..."></textarea>
+        <div class="row">
+          <button class="btn secondary" id="jmCancel">Cancel</button>
+          <button class="btn" id="jmSave">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🧠 Logic -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

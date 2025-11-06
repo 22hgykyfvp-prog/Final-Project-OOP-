@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quran Journal — My Journal</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data:;
+               connect-src 'self' https://*;
+               img-src 'self' data: https://*;
+               style-src 'self' 'unsafe-inline';
+               script-src 'self';"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <!-- add a class so we can target journal-only stuff -->
+  <body class="journal-page">
+    <!-- 🟩 SAME HEADER AS PROGRESS -->
+    <header>
+      <div class="top-banner">
+        🕊️ Give hope to families in Palestine &amp; displaced Palestinians.
+        <a href="https://www.unrwa.org/donate" target="_blank" rel="noopener">Donate now</a>
+      </div>
+      <div class="main-nav">
+        <div class="brand">🕋 Quran Journal</div>
+        <nav class="nav-links">
+          <a href="./index.html">Surah Browser</a>
+          <a class="active" href="./journal.html">My Journal</a>
+          <a href="./progress.html">Progress</a>
+          <a href="./almathurat.html">Al-Ma’thurat</a>
+          <a href="./daily_dzikir.html">Daily Dzikir</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 🧁 journal intro -->
+    <main class="journal-shell">
+      <header class="journal-head">
+        <p class="journal-badge">Your saved reflections</p>
+        <h1 class="journal-title-main">My Journal</h1>
+        <p class="journal-subtitle-main">
+          This is where your notes and last ayah for each surah are kept. You can edit or delete anytime.
+        </p>
+      </header>
+
+      <!-- empty state -->
+      <div id="journal-empty" class="journal-empty" style="display:none;">
+        <span class="icon">📝</span>
+        <p>You don’t have any reflections yet.</p>
+        <p class="small">Go to <a href="./index.html">Surah Browser</a> and save one.</p>
+      </div>
+
+      <!-- list of reflections -->
+      <div id="journal-list" class="journal-card-list"></div>
+    </main>
+
+    <!-- ✏️ modal -->
+    <div class="modal" id="journalModal">
+      <div class="content classy-modal">
+        <h4 id="jmTitle">Edit reflection</h4>
+
+        <label for="jmAyahs">Ayah you stopped at (optional)</label>
+        <input type="number" id="jmAyahs" min="0" placeholder="e.g. 37" />
+
+        <label for="jmNotes">Notes / reflection</label>
+        <textarea
+          id="jmNotes"
+          rows="4"
+          placeholder="What touched your heart from this surah?"
+        ></textarea>
+
+        <div class="row">
+          <button class="btn secondary" id="jmCancel">Cancel</button>
+          <button class="btn" id="jmSave">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./journal.js"></script>
+  </body>
+</html>
