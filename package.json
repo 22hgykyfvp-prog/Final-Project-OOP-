@@ -1,0 +1,12 @@
+{
+  "name": "quranjournal",
+  "version": "1.0.2",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^31.3.0"
+  }
+}
